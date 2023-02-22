@@ -36,7 +36,7 @@ gallery.innerHTML = galleryItemsMarkup;
   `);
     instance.show();
     window.addEventListener("keydown", closeModal);
-  }
+  
 
 
   //  does not work and I did not find the answer in the library
@@ -57,6 +57,7 @@ gallery.innerHTML = galleryItemsMarkup;
     }
     window.removeEventListener("keydown", closeModal);
   }
+}
 
 
 //  solution with class 
