@@ -40,24 +40,24 @@ gallery.innerHTML = galleryItemsMarkup;
 
 
   //  does not work and I did not find the answer in the library
-  // function closeModal(event) {
-  //   if (event.code === "Escape") {
-  //   instance.close();
-  //   }
-  //   window.removeEventListener("keydown", closeModal);
-  // }
+   function closeModal(event) {
+     if (event.code === "Escape") {
+     instance.close();
+     }
+     window.removeEventListener("keydown", closeModal);
+   }
   // my decision
 
-  function closeModal(event) {
-    if (event.code === "Escape") {
-      const modal = document.querySelector(".basicLightbox");
-      if (modal) {
-        modal.remove();
-      }
-    }
-    window.removeEventListener("keydown", closeModal);
-  }
-}
+  //function closeModal(event) {
+  //  if (event.code === "Escape") {
+   //   const modal = document.querySelector(".basicLightbox");
+   //   if (modal) {
+   //     modal.remove();
+   //   }
+  //  }
+  //  window.removeEventListener("keydown", closeModal);
+//  }
+// }
 
 
 //  solution with class 
