@@ -35,27 +35,17 @@ gallery.innerHTML = galleryItemsMarkup;
     <img src="${url}" width="800" height="600" alt="${description}">
   `);
     instance.show();
-    window.addEventListener("keydown", closeModal);
+    window.addEventListener("keydown", closeEscapeModal);
   }
 
-
-  //  does not work and I did not find the answer in the library
-  // function closeModal(event) {
-  //   if (event.code === "Escape") {
-  //   instance.close();
-  //   }
-  //   window.removeEventListener("keydown", closeModal);
-  // }
-  // my decision
-
-  function closeModal(event) {
+  function closeEscapeModal(event) {
     if (event.code === "Escape") {
       const modal = document.querySelector(".basicLightbox");
       if (modal) {
         modal.remove();
       }
     }
-    window.removeEventListener("keydown", closeModal);
+    window.removeEventListener("keydown", closeEscapeModal);
   }
 
 
@@ -91,17 +81,17 @@ gallery.innerHTML = galleryItemsMarkup;
 //       <img src="${url}" width="800" height="600" alt="${description}">
 //     `);
 //     instance.show();
-//     window.addEventListener("keydown", this.closeModal.bind(this));
+//     window.addEventListener("keydown", this.closeEscapeModal.bind(this));
 //   }
 
-//   closeModal(event) {
+//   closeEscapeModal(event) {
 //     if (event.code === "Escape") {
 //       const modal = document.querySelector(".basicLightbox");
 //       if (modal) {
 //         modal.remove();
 //       }
 //     }
-//     window.removeEventListener("keydown", this.closeModal.bind(this));
+//     window.removeEventListener("keydown", this.closeEscapeModal.bind(this));
 //   }
 // }
 
