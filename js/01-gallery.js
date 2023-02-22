@@ -35,6 +35,7 @@ gallery.innerHTML = galleryItemsMarkup;
     <img src="${url}" width="800" height="600" alt="${description}">
   `);
     instance.show();
+
     window.addEventListener("keydown", closeEscapeModal);
   }
 
@@ -47,7 +48,6 @@ gallery.innerHTML = galleryItemsMarkup;
     }
     window.removeEventListener("keydown", closeEscapeModal);
   }
-
 
 //  solution with class 
 
