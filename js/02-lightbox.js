@@ -20,6 +20,3 @@ const galleryMarkupEls = galleryItems
    captionsData:	'alt',
    captionPosition:	'bottom',
  });
- gallery.on("show.simplelightbox", function () {
-   // do something…
- });
